@@ -1,0 +1,280 @@
+.event-detail-page {
+  background: #fff;
+  min-height: 100vh;
+}
+
+.event-detail-container {
+  max-width: 1200px;
+  margin: 18px auto;
+  padding: 40px 20px;
+}
+
+/* Title */
+.detail-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.detail-letter-d {
+  color: #ff6b35;
+}
+
+.detail-letter-e {
+  color: #ff6b35;
+}
+
+/* Main Content Layout */
+.event-detail-content {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Left Side - Image */
+
+.event-detail-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.register-btn {
+  width: 100%;
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.register-btn:hover {
+  background: #e55a2b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
+
+/* Right Side - Content */
+.event-detail-info {
+  padding: 0 20px;
+}
+
+.event-detail-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #315088;
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+
+.event-description {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.event-description p {
+  color: #315088;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Info Sections */
+.event-info-section {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e1e5e9;
+  padding-bottom: 20px;
+}
+
+.event-info-section:last-child {
+  border-bottom: none;
+}
+
+.event-info-section h3 {
+  color: #315088;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.event-info-section p {
+  color: #315088;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.time-location p,
+.contact-info p {
+  margin: 8px 0;
+}
+
+.time-location strong,
+.contact-info strong {
+  color: #315088;
+  font-weight: 600;
+}
+
+/* Error State */
+.event-not-found {
+  text-align: center;
+  padding: 80px 20px;
+  color: #666;
+}
+
+.back-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #357abd;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .event-detail-content {
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+  }
+
+  .event-detail-image {
+    top: 180px;
+  }
+
+  .event-detail-image img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-detail-container {
+    padding: 30px 15px;
+  }
+
+  .detail-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .event-detail-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .event-detail-image {
+    position: static;
+    order: 1;
+  }
+
+  .event-detail-image img {
+    height: 200px;
+  }
+
+  .event-detail-info {
+    padding: 0;
+    order: 2;
+  }
+
+  .event-detail-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-detail-container {
+    padding: 20px 10px;
+  }
+
+  .detail-title {
+    font-size: 1.6rem;
+  }
+
+  .event-detail-title {
+    font-size: 1.3rem;
+  }
+
+  .event-info-section h3 {
+    font-size: 1rem;
+  }
+
+  .register-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Union Office Action Buttons */
+.union-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.approve-btn {
+  background: #ff6b35;
+  min-width: 200px;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.approve-btn:hover {
+  background: #ff6b35;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(246, 179, 53, 0.3);
+}
+
+.reject-btn {
+  min-width: 200px;
+  background: #315088;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.reject-btn:hover {
+  background: #2a4570;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(49, 80, 136, 0.3);
+}
+
+@media (max-width: 768px) {
+  .union-action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

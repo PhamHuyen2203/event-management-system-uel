@@ -1,0 +1,346 @@
+/* Auth Form Styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Error Message */
+.error-message {
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 5px;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.input-group {
+  position: relative;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #374151;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.auth-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.auth-input:focus {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.auth-button {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 12px rgba(30, 64, 175, 0.3);
+  margin-top: 3px;
+  align-self: center;
+  min-width: 130px;
+}
+
+.auth-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.4);
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.auth-button:disabled:hover {
+  transform: none;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+}
+
+.auth-input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Demo Accounts */
+.demo-accounts {
+  max-width: 400px;
+  width: 100%;
+  margin: 15px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.demo-accounts h4 {
+  color: white;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.demo-account-item {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.demo-account-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.demo-account-item strong {
+  color: #fbbf24;
+  margin-right: 8px;
+}
+
+/* Auth Divider */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.auth-divider span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 0 12px;
+  letter-spacing: 1px;
+}
+
+/* Google Login Button */
+.google-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: white;
+  color: #374151;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.google-login-button:hover {
+  background: #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.google-login-button:active {
+  transform: translateY(0);
+}
+
+.google-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.auth-switch {
+  color: white;
+  margin-bottom: 8px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-switch p {
+  margin: 0 0 3px 0;
+  font-size: 12px;
+}
+
+.auth-switch a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.auth-switch a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Auth Form Responsive Design */
+@media (max-width: 768px) {
+  .auth-form {
+    gap: 8px;
+    margin-bottom: 10px;
+    max-width: 350px;
+  }
+
+  .auth-input {
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 18px;
+  }
+
+  .auth-button {
+    padding: 8px 30px;
+    font-size: 13px;
+    min-width: 120px;
+    border-radius: 18px;
+  }
+
+  .auth-divider {
+    max-width: 350px;
+    margin: 8px 0;
+  }
+
+  .auth-divider span {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+
+  .google-login-button {
+    max-width: 350px;
+    padding: 8px 16px;
+    font-size: 12px;
+    gap: 8px;
+    margin-bottom: 10px;
+    border-radius: 18px;
+  }
+
+  .google-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .auth-switch {
+    max-width: 350px;
+    margin-bottom: 6px;
+  }
+
+  .auth-switch p {
+    font-size: 11px;
+  }
+
+  .auth-switch a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-form {
+    gap: 6px;
+    margin-bottom: 8px;
+    max-width: 300px;
+  }
+
+  .auth-input {
+    padding: 6px 10px;
+    font-size: 11px;
+    border-radius: 15px;
+  }
+
+  .auth-button {
+    padding: 6px 25px;
+    font-size: 12px;
+    min-width: 100px;
+    border-radius: 15px;
+  }
+
+  .auth-divider {
+    max-width: 300px;
+    margin: 6px 0;
+  }
+
+  .auth-divider span {
+    font-size: 9px;
+    padding: 0 8px;
+  }
+
+  .google-login-button {
+    max-width: 300px;
+    padding: 6px 12px;
+    font-size: 11px;
+    gap: 6px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+  }
+
+  .google-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .auth-switch {
+    margin-bottom: 5px;
+    max-width: 300px;
+  }
+
+  .auth-switch p {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+  .auth-switch a {
+    font-size: 11px;
+  }
+}

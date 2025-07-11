@@ -1,0 +1,304 @@
+/* Personal Info Page Styles */
+.personal-info-main {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Hero section with background - Full viewport height */
+.personal-info-hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.personal-info-hero-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.personal-info-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.personal-info-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(173, 216, 230, 0.7) 0%,
+    rgba(135, 206, 235, 0.4) 30%,
+    rgba(255, 255, 255, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.personal-info-hero-content {
+  text-align: center;
+}
+
+.personal-info-hero-logo {
+  max-width: 300px;
+  width: 90%;
+  height: auto;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Content section - Overlay on top of hero */
+.personal-info-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.personal-info-form-container {
+  background: rgba(96, 165, 250, 0.9);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px 40px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.personal-info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.personal-info-icon {
+  color: white;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.personal-info-title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.personal-info-input-group {
+  position: relative;
+}
+
+.personal-info-input {
+  width: 100%;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #374151;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.personal-info-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.personal-info-input:focus {
+  background: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Gender Selection */
+.gender-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 12px 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gender-label {
+  color: #9ca3af;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 30px;
+}
+
+.gender-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #374151;
+  font-size: 14px;
+}
+
+.gender-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b82f6;
+}
+
+.gender-text {
+  font-weight: 500;
+}
+
+/* Confirm Button */
+.personal-info-confirm-btn {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  padding: 14px 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+  margin-top: 15px;
+  align-self: center;
+}
+
+.personal-info-confirm-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .personal-info-content {
+    padding: 15px;
+  }
+
+  .personal-info-form-container {
+    padding: 25px 30px;
+    max-width: 400px;
+    border-radius: 18px;
+    background: rgba(96, 165, 250, 0.92);
+  }
+
+  .personal-info-title {
+    font-size: 18px;
+  }
+
+  .personal-info-input {
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 20px;
+  }
+
+  .gender-container {
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+
+  .gender-options {
+    gap: 25px;
+  }
+
+  .personal-info-confirm-btn {
+    padding: 12px 40px;
+    font-size: 14px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .personal-info-content {
+    padding: 10px;
+  }
+
+  .personal-info-form-container {
+    padding: 20px 25px;
+    max-width: 350px;
+    border-radius: 15px;
+    background: rgba(96, 165, 250, 0.95);
+  }
+
+  .personal-info-header {
+    margin-bottom: 20px;
+  }
+
+  .personal-info-title {
+    font-size: 16px;
+  }
+
+  .personal-info-form {
+    gap: 12px;
+  }
+
+  .personal-info-input {
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 18px;
+  }
+
+  .gender-container {
+    padding: 8px 12px;
+    border-radius: 18px;
+  }
+
+  .gender-label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .gender-options {
+    gap: 20px;
+  }
+
+  .gender-option {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .gender-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .personal-info-confirm-btn {
+    padding: 10px 35px;
+    font-size: 13px;
+    border-radius: 18px;
+    margin-top: 12px;
+  }
+}

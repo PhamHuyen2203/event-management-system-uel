@@ -1,0 +1,167 @@
+/* Authentication Layout Styles - Similar to HomePage */
+.auth-main-content {
+  position: relative;
+  height: 100vh;
+}
+
+/* Hero section with background */
+.auth-hero-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+}
+
+.auth-hero-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.auth-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.auth-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 151, 197, 0.7) 0%,
+    rgba(18, 91, 119, 0.4) 30%,
+    rgba(255, 255, 255, 0.1) 60%,
+    transparent 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.auth-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.auth-hero-logo {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Content section with form */
+.auth-content-section {
+  background: linear-gradient(135deg, #ff7b3d 0%, #ff6b2d 100%);
+  margin-top: -7vh;
+  margin-bottom: 0;
+  height: 77vh;
+  padding: 15px 50px 10px;
+  text-align: center;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.auth-logo {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.back-button {
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  display: inline;
+  margin-top: 10px;
+  align-self: center;
+  background-color: transparent;
+
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Auth Layout Responsive Design */
+@media (max-width: 768px) {
+  .auth-hero-section {
+    height: 30vh;
+  }
+
+  .auth-content-section {
+    height: 77vh;
+    margin-top: -7vh;
+    padding: 12px 20px 8px;
+  }
+
+  .auth-hero-overlay {
+    padding-top: 20px;
+  }
+
+  .auth-logo {
+    margin-bottom: 12px;
+    margin-top: 8px;
+  }
+
+  .back-button {
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-hero-section {
+    height: 30vh;
+  }
+
+  .auth-content-section {
+    height: 77vh;
+    margin-top: -7vh;
+    padding: 10px 15px 6px;
+  }
+
+  .auth-hero-overlay {
+    padding-top: 15px;
+  }
+
+  .auth-hero-logo {
+    max-width: 200px;
+    height: 30px;
+  }
+
+  .auth-logo {
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .back-button {
+    padding: 4px 8px;
+    font-size: 9px;
+    margin-top: 6px;
+    border-radius: 12px;
+  }
+}
