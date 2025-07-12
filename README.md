@@ -56,7 +56,7 @@
 - Quản lý thông tin tổ chức
 - Xuất báo cáo danh sách tham gia (PDF)
 
-### 3. 🏛️ Đoàn Thanh Niên - Ban Công Tác Sinh Viên (Union Office)
+### 3. 🏛️ Văn phòng Đoàn - Hội sinh viên trường (Union Office)
 
 **Quyền hạn và chức năng:**
 
@@ -191,7 +191,7 @@ npm run lint
 
 ## 📚 Hướng Dẫn Sử Dụng
 
-### 🎯 Tài Khoản Demo
+### 🎯 Tài Khoản Demo: Sử dụng các tài khoản sau tương ứng với các Role để test Demo
 
 **Sinh viên:**
 
@@ -217,12 +217,13 @@ npm run lint
 4. Upload hình ảnh sự kiện
 5. Submit để gửi phê duyệt
 
-#### 2. 🏛️ Đoàn Thanh Niên Phê Duyệt
+#### 2. 🏛️ Đoàn Trường Phê Duyệt
 
 1. Đăng nhập với tài khoản union office
 2. Vào "Evaluate Events"
 3. Xem chi tiết sự kiện cần phê duyệt
 4. Approve hoặc Reject với lý do
+5. Các tính năng khác tương tự với các organization khác
 
 #### 3. 🎓 Sinh Viên Đăng Ký
 
@@ -231,7 +232,7 @@ npm run lint
 3. Click "Chi tiết" để xem thông tin đầy đủ
 4. Click "Đăng ký" để tham gia sự kiện
 
-#### 4. 📱 Check-in Bằng QR Code
+#### 4. 📱 Check-in Bằng QR Code: Phần này nhóm tụi em chỉ demo cơ bản chứ chưa check được mấy cái như địa chỉ IP...
 
 1. Tổ chức tạo QR Code trong "QR Code" section
 2. In QR Code hoặc hiển thị trên screen
@@ -454,26 +455,10 @@ git push origin fix/bug-description
 
 ### 🌟 Acknowledgments
 
-**Phát triển bởi:**
-
-- Trường Đại học Kinh tế - Luật
-- Đại học Quốc gia TP.HCM
-- Đoàn Thanh niên - Hội Sinh viên UEL
-
 **Công nghệ được sử dụng:**
 
 - React Team cho React framework
 - Vitejs Team cho build tool
 - Open source community cho various libraries
 
----
 
-## 📄 License
-
-Dự án này được phát triển cho mục đích giáo dục và nội bộ của Trường Đại học Kinh tế - Luật. Mọi quyền được bảo lưu.
-
----
-
-**🎯 Version**: 1.0.0  
-**📅 Last Updated**: January 2025  
-**👨‍💻 Maintained by**: UEL Development Team
