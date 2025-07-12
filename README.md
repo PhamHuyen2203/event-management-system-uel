@@ -1,4 +1,4 @@
-# 🎯 Hệ Thống Quản Lý Sự Kiện UEL (UEL Event Management System)
+# Hệ Thống Quản Lý Sự Kiện UEL (UEL Event Management System)
 
 ## 📋 Tổng Quan Dự Án
 
