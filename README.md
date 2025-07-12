@@ -447,11 +447,6 @@ git push origin fix/bug-description
    - Check localStorage data
    - Verify user credentials
 
-### 📧 Liên Hệ Support
-
-- **Technical Issues**: [email@uel.edu.vn]
-- **Feature Requests**: [feature-request@uel.edu.vn]
-- **Bug Reports**: [bug-report@uel.edu.vn]
 
 ### 🌟 Acknowledgments
 
